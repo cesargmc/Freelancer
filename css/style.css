@@ -1,15 +1,14 @@
 :root {
     --blanco: #fff;
-    --primario: #14213d;
-    --secundario: #fca311;
+    --primario: #fca311;
+    --secundario: #14213d;
     --negro: #050206;
-
-    
 }
 
+/* Globales */
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Box Model */
 }
 
 *, *:before, *:after {
@@ -21,6 +20,31 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto ;
+}
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width: 480px) {
+    .boton {
+        width: auto;
+    }
+}
+
+/* Tipografia */
 h1 {
     font-size: 3.8rem;
     font-family: 'Montserrat', sans-serif;
@@ -34,19 +58,16 @@ h3 {
     font-size: 1.8rem;
 }
 
-h1, h2, h3 { 
+h1, h2, h3 {
     text-align: center;
 }
 
+/* Titulos */
 .titulo span {
     font-size: 2rem;
 }
 
-.contenedor {
-    max-width: 120rem;
-    margin: 0 auto ;
-}
-
+/* Navegacion principal */
 .nav-bg {
     background-color: var(--secundario);
 }
@@ -77,6 +98,8 @@ h1, h2, h3 {
     background-color: var(--primario);
 }
 
+
+/* Hero */
 .hero {
     background-image: url(/img/heroe.jpg);
     background-repeat: no-repeat;
