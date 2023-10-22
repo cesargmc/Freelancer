@@ -1,7 +1,7 @@
 :root {
     --blanco: #fff;
-    --primario: #3b3b3b;
-    --secundario: #9a8174;
+    --primario: #14213d;
+    --secundario: #fca311;
     --negro: #050206;
 
     
@@ -11,18 +11,31 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
 body {
     font-size: 16px;/** 1rem = 10px **/
     font-family: 'Open Sans', sans-serif;
 }
 
-.titulo { 
-    text-align: center;
+h1 {
     font-size: 3.8rem;
     font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3 { 
+    text-align: center;
 }
 
 .titulo span {
@@ -65,7 +78,7 @@ body {
 }
 
 .hero {
-    background-image: url(/img/hero2.jpg);
+    background-image: url(/img/heroe.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
@@ -84,3 +97,7 @@ body {
     justify-content: center;
 }
 
+.contenido-hero h2,
+.contenido-hero p {
+    color: var(--blanco);
+}
