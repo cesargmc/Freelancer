@@ -3,6 +3,8 @@
     --primario: #fca311;
     --secundario: #14213d;
     --negro: #050206;
+    --gris: #e5e5e5;
+    --grisClaro: #edede9;
 }
 
 /* Globales */
@@ -18,6 +20,7 @@ html {
 body {
     font-size: 16px;/** 1rem = 10px **/
     font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
 }
 
 .contenedor {
